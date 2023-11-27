@@ -93,10 +93,9 @@ for(i=0;i<monarray.length;i++) {
         //     }
         // }
 
-        var grid = $('.grid').isotope({
+        var grid = $('.grille').isotope({
             // options
             itemSelector: '.carte',
-            layoutMode: 'fitRows',
             masonry: {
                 gutter: 10,
               },
