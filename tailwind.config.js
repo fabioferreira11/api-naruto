@@ -29,6 +29,13 @@ module.exports = {
         title: ['700'],
         texte: ['500'],
       },
+    width: {
+        undemi: "calc((100% - 10px) / 2)",
+        untier: "calc((100% - 20px) / 3)",
+        unquart: "calc((100% - 30px) / 4)",
+        uncinq: "calc((100% - 40px) / 5)",
+        unsix: "calc((100% - 50px) / 6)",
+      },
     },
   },
   plugins: [],

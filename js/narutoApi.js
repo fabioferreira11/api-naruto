@@ -23,7 +23,7 @@ for(i=0;i<monarray.length;i++) {
         monarray[i].personal.species = "Humain";
 
     }
-    monhtml +='<div class="carte bg-black text-white w-1/6 h-[42vh] p-3 overflow-auto border-4 border-[#ffffff] rounded-xl my-8 mx-7 grid-item '+monarray[i].personal.species+'"> <h2 class="text-smal">'+ monarray[i].name+'</h2> '
+    monhtml +='<div class="carte bg-black text-white w-undemi lg:w-unsix h-[42vh] p-3 overflow-auto border-4 border-[#ffffff] rounded-xl my-8 grid-item '+monarray[i].personal.species+'"> <h2 class="text-smal">'+ monarray[i].name+'</h2> '
     // monhtml +=  monarray[i].id+'<br>'
 
 
@@ -95,8 +95,11 @@ for(i=0;i<monarray.length;i++) {
 
         var grid = $('.grid').isotope({
             // options
-            itemSelector: '.grid-item',
-            layoutMode: 'fitRows'
+            itemSelector: '.carte',
+            layoutMode: 'fitRows',
+            masonry: {
+                gutter: 10,
+              },
           });
     
           $('.filter button').on( 'click', function() {

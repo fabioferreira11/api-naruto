@@ -122,3 +122,5 @@
  .button{
     @apply  bg-black hover:bg-white text-white hover:text-black p-1 mr-4 rounded-3xl w-32
  }
+
+ 
